@@ -1,0 +1,169 @@
+:root{
+--blue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+--main-blue: hsl(217, 54%, 11%);
+--card-blue: hsl(216, 50%, 16%);
+--line-blue: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-blue);
+    min-height: calc(100vh - 0.1px);
+    margin: 0 1.5rem;
+    border-radius: 15px;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container{
+    background-color: var(--card-blue);
+    max-width: 300px;
+    border-radius: 15px;
+}
+
+.creator{
+    display: flex;
+}
+.img-container{
+    position: relative;
+}
+.img-nft{
+    width:100%;
+    padding-left:1rem;
+}
+#qube{
+    border-radius:8px;
+    width:100%;
+    margin-top:1rem;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    cursor: pointer;
+}
+.img-icon{
+    position: absolute;
+    width: calc(100% - 15px);
+    height: calc(100% - 1px);
+    border-radius: 8px;
+    top: 0;
+    left:1rem;
+    background-color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+}
+#icon-view{
+    left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 5;
+}
+.img-icon:hover {
+    opacity: 0.5;
+  } 
+
+.img-container{
+    align-items:center;
+    max-width:280px;
+}
+
+h1{
+    font-size:24px;
+    color: var(--white);
+    font-weight: 600;
+    padding-left: 20px;
+    padding-top: 25px;
+    cursor: pointer;
+}
+#about{color: var(--blue);
+font-weight: 300;
+font-size: 16px;
+line-height: 1.5rem;
+padding-left: 20px;
+padding-top: 15px;}
+
+.price{
+padding-left: 20px;
+padding-top: 15px;
+font-size: 15px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1rem 1rem;
+
+}
+
+#eth{
+    color: var(--cyan);
+
+}
+#days{
+    color: var(--blue);
+    
+}
+svg{
+    margin-right: 5px;
+}
+span{
+    display: flex;
+    align-items: center;
+}
+hr.solid {
+    border: 0.5px solid var(--blue);
+    width:250px;
+    margin-left:1.5rem;
+  
+}
+
+#name{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(white);
+}
+
+a:visited{
+    color: var(--white);
+}
+a:hover, h1:hover{
+    color:var(--cyan)
+}
+
+.creator{
+    display: flex;
+    padding-left: 1.5rem;
+    align-content: space-between;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+#avatar{
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    height: 2rem;
+  width: 2rem;
+  margin-right: 0.6rem;
+}
+#owner{
+    align-self: center;
+    color: var(--blue);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.attribution{
+    padding-top: 1rem;
+    color: var(--white);
+}
